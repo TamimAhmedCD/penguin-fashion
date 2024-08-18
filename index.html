@@ -27,28 +27,33 @@
             tailwind.config = {
               theme: {
                 extend: {
-                  colors: {
-                    clifford: '#da373d',
-                    fontFamily:{
-                        bebas: ["Bebas Neue", "sans-serif"],
-                        roboto: ["Roboto", "sans-serif"],
-                    } ,
-                  },
+                    colors: {
+                        Martinique: "#363958",
+                        Tuatara: "#3C3C3C",
+                        green1: "#A4BC46",
+                        green2: "#85A019",
+                    },
+                    fontFamily: {
+                        bebas: ['"Bebas Neue"', "sans-serif"],
+                        roboto: ['"Roboto"', "sans-serif"],
+                    },
                 },
               },
             }
           </script>
 
 </head>
-<body>
-    <header class=" px-5 pt-6 lg:px-36 lg: pt-10">
+<body class="font-roboto">
+    <header class=" bg-yellow-50 px-5 pt-6 lg:px-36 lg: pt-10">
+
+        <!-- Navbar -->
         <nav class="flex items-center justify-between">
             <!-- navbar logo -->
             <div>
                 <img class="w-4/6 lg:w-[291.11px]" src="./icons/logo.png" alt="">
             </div>
             <!-- navbar list -->
-             <ul class=" hidden lg:flex gap-14 text-base font-medium text-emerald-950">
+             <ul class=" hidden lg:flex gap-14 text-base font-medium text-Tuatara">
                 <li>
                     <a href="#">Home</a>
                 </li>
@@ -64,6 +69,23 @@
              </ul>
              <i class="fa-solid fa-bars-staggered md:text-3xl lg:hidden"></i>
         </nav>
+
+        <!-- Hero Section -->
+        <div class="lg:flex items-center justify-between mt-5">
+            <!-- Title & Designation -->
+            <div>
+                <h1 class="font-babes text-3xl md:text-6xl font-bold text-yellow-500 uppercase mb-2">Be the Penguins <br>
+                    <span class="text-Martinique">of Winter</span></h1>
+                <p class="text-Tuatara mb-3">Lorem Ipsum is simply dummy text of the printing <br>
+                    and typesetting industry.</p>
+                <button class="px-9 py-4 bg-gradient-to-b from-green1 to-green2 text-white rounded-lg"><i class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+            </div>
+            <!-- Hero Img -->
+            <div class="flex justify-center items-center pb-16 pt-10 lg:pt-0">
+                <img src="./images/model.png" alt="">
+            </div>
+        </div>
+
     </header>
 </body>
 </html>
